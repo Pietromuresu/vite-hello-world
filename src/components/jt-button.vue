@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-    <button>{{text}}</button>    
+    <button @click="text = 'Bravo'">{{text}}</button>    
 </template>
 
 <style scoped>
