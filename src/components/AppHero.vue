@@ -1,5 +1,6 @@
 <script>
 import AppTitle from "./AppTitle.vue"
+import jtButton from "./jt-button.vue";
 export default {
   name: "AppHero",
   data(){
@@ -9,7 +10,8 @@ export default {
   },
 
   components:{
-    AppTitle
+    AppTitle,
+    jtButton
   }
 }
 </script>
@@ -17,16 +19,18 @@ export default {
 <template>
   <div>
     <AppTitle/>
+    <jt-button/>
   </div>
 </template>
 
 <style scoped>
 div{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  padding-top: 50px;
   width: 100vw;
   height: 500px;
   background-image: url("../assets/Img/jumbotron-bg.webp");
 }
+
+
 </style>
